@@ -4,12 +4,33 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url('assets/images/bg.jpg');
+    background-color: black;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 #container{
-    margin: 60px;
+    background-image: url('assets/images/bg.jpg');
+    background-position-x: center;
+    margin: 5px 50px;
+    width: 60%;
+    height: 900px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+#container_items{
+    background-color: blue;
+    margin: 0px 20px;
+    
+   
 
 }
 
@@ -22,6 +43,7 @@ header h1{
 
 main{
     margin-top: 30px;
+    text-align: center;
     
 }
 
@@ -54,10 +76,14 @@ footer{
 footer i{
     margin-bottom: 15px;
 }
-@media screen and (max-width: 480px) {
-    form #email, #submit{
+@media screen and (max-width: 700px) {
+    form #email{
         width: 100%;
     }
+    #submit{
+        width: 250px;
+    }
+
 }
 @media screen and (min-width: 481px) {
     form #email{
@@ -76,6 +102,7 @@ footer i{
     body{
         font-size: 20px;
     }
+  
 }
 @media screen and (min-width: 1201px) {
     form #email{
